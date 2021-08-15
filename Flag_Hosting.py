@@ -7,7 +7,7 @@ fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # 'x264' doesn't work
 out = cv2.VideoWriter('test1.mp4',fourcc, 8.0, size)  # 'False' for 1-ch instead of 3-ch for color
 
 
-flag = cv2.imread('flag2.jpg')
+flag = cv2.imread('flag.jpg')  #image which we want to display
 def put_flag(flag, fc, x, y, w, h):
     flag_width = w
     flag_height = h
